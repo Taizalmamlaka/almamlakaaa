@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>PSFree-Lapse Exploit For PS4 9.00</title>
+        <style>
+            @font-face {
+                font-family: 'logging';
+                src: url('fonts/LiberationMono-Regular.ttf');
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background-image: url('https://i.postimg.cc/sXhs7DXh/image.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                height: 100vh;
+                color: white; /* لتوضيح النص على الخلفية */
+            }
+            a {
+                color: lightblue;
+            }
+            #console {
+                font-family: 'logging';
+            }
+        </style>
+        <script>
+            if (window.applicationCache.status == '0') {
+                window.location.replace("cache.html");
+            }
+        </script>
+    </head>
+    <body>
+        PSFree: A PS4/PS5 Exploit Chain
+        <br><br>
+        See <a href='./about.html' data-jslicense='1'>JavaScript license information</a> for the
+        source code and license.<br>
+        <pre id='console'></pre>
+    </body>
+    <script type='module' src='./alert.mjs'></script>
+</html>
